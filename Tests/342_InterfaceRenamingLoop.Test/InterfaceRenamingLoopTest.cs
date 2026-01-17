@@ -19,7 +19,7 @@ namespace InterfaceRenamingLoop.Test {
 		[Trait("Issue", "https://github.com/mkaring/ConfuserEx/issues/342")]
 		public async Task RenameInterfaceLoop(string renameMode) =>
 			await Run(
-				"342_InterfaceRenamingLoop.exe",
+				"342_InterfaceRenamingLoop.dll",
 				Array.Empty<string>(),
 				new SettingItem<Protection>("rename") {
 					{ "mode", renameMode }

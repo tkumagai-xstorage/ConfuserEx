@@ -15,7 +15,7 @@ namespace IncorrectRedirectToGac.Test {
 		[Trait("Issue", "https://github.com/mkaring/ConfuserEx/issues/144")]
 		public async Task IncorrectRedirectToGac() =>
 			await Run(
-				new [] { "IncorrectRedirectToGac.exe", "Microsoft.Build.Framework.dll" }, new string[0], NoProtections
+				new [] { "IncorrectRedirectToGac.dll", "Microsoft.Build.Framework.dll" }, new string[0], NoProtections
 			);
 
 		[Fact]
@@ -23,7 +23,7 @@ namespace IncorrectRedirectToGac.Test {
 		[Trait("Issue", "https://github.com/mkaring/ConfuserEx/issues/144")]
 		public async Task IncorrectExternalRedirectToGac() =>
 			await Run(
-				new [] { "IncorrectRedirectToGac.exe", "external:Microsoft.Build.Framework.dll" }, new string[0], NoProtections, outputDirSuffix: "_external"
+				new [] { "IncorrectRedirectToGac.dll", "external:Microsoft.Build.Framework.dll" }, new string[0], NoProtections, outputDirSuffix: "_external"
 			);
 
 		[Theory]
@@ -32,7 +32,7 @@ namespace IncorrectRedirectToGac.Test {
 		[Trait("Issue", "https://github.com/mkaring/ConfuserEx/issues/144")]
 		public async Task IncorrectRedirectToGacPacker(string compatKey, string deriverKey) =>
 			await Run(
-				new [] { "IncorrectRedirectToGac.exe", "Microsoft.Build.Framework.dll" }, 
+				new [] { "IncorrectRedirectToGac.dll", "Microsoft.Build.Framework.dll" }, 
 				new string[0], 
 				NoProtections,
 				outputDirSuffix: $"_packer_{compatKey}_{deriverKey}",

@@ -17,7 +17,7 @@ namespace ComplexClassStructureRename.Test {
 		public async Task ComplexClassStructureRename() =>
 			await Run(
 				new[] {
-					"306_ComplexClassStructureRename.exe",
+					"306_ComplexClassStructureRename.dll",
 					"306_ComplexClassStructureRename.Lib.dll"
 				},
 				new[] {

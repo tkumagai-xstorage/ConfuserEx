@@ -99,6 +99,14 @@ namespace Confuser.Core {
 				foreach (string probePath in context.Project.ProbePaths)
 					asmResolver.PostSearchPaths.Insert(0, Path.Combine(context.BaseDirectory, probePath));
 
+				var tpa = AppContext.GetData("TRUSTED_PLATFORM_ASSEMBLIES") as string;
+				if (!string.IsNullOrEmpty(tpa)) {
+					foreach (var path2 in tpa.Split(Path.PathSeparator)) {
+						var path3 = Path.GetDirectoryName(path2);
+						asmResolver.PostSearchPaths.Add(path3);
+					}
+				}
+
 				context.CheckCancellation();
 
 				Marker marker = parameters.GetMarker();

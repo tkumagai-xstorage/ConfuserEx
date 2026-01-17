@@ -16,7 +16,7 @@ namespace TypeScrambler.Test {
 		[Trait("Category", "Protection")]
 		[Trait("Protection", "typescramble")]
 		public async Task ScrambleAndExecuteTest()  =>
-			await Run("TypeScrambler.exe",
+			await Run("TypeScrambler.dll",
 				new[] {
 					"Text from WriteTextToConsole",
 					"Static Text",

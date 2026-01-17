@@ -1,12 +1,23 @@
-﻿using dnlib.DotNet;
+﻿using System;
+using System.IO;
+using dnlib.DotNet;
 using Moq;
 using Xunit;
 
 namespace Confuser.Renamer.Test {
 	internal static class Helpers {
 		internal static ModuleDefMD LoadTestModuleDef() {
+
 			var asmResolver = new AssemblyResolver { EnableTypeDefCache = true };
-			asmResolver.DefaultModuleContext = new ModuleContext(asmResolver);
+
+			var tpa = AppContext.GetData("TRUSTED_PLATFORM_ASSEMBLIES") as string;
+			if (!string.IsNullOrEmpty(tpa)) {
+				foreach (var p in tpa.Split(Path.PathSeparator))
+					asmResolver.PreSearchPaths.Add(Path.GetDirectoryName(p));
+			}
+
+			asmResolver.DefaultModuleContext = new ModuleContext(asmResolver);			
+
 			var options = new ModuleCreationOptions(asmResolver.DefaultModuleContext) {
 				TryToLoadPdbFromDisk = false
 			};

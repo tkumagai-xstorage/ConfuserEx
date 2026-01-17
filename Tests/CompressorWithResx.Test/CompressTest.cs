@@ -17,7 +17,7 @@ namespace CompressorWithResx.Test {
 		[Trait("Packer", "compressor")]
 		public async Task CompressAndExecuteTest(string compatKey, string deriverKey, string resourceProtectionMode) =>
 			await Run(
-				new[] {"CompressorWithResx.exe", Path.Combine("de", "CompressorWithResx.resources.dll")},
+				new[] { "CompressorWithResx.dll", Path.Combine("de", "CompressorWithResx.resources.dll")},
 				new[] {"Test (fallback)", "Test (deutsch)"},
 				resourceProtectionMode != "none"
 					? new SettingItem<Protection>("resources") {{"mode", resourceProtectionMode}}

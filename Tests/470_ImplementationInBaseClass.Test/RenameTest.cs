@@ -21,7 +21,7 @@ namespace ImplementationInBaseClass.Test
 		public async Task ResolveNameLoop(RenameMode mode, bool flatten) =>
 			await Run(
 				new[] {
-					"470_ImplementationInBaseClass.exe"
+					"470_ImplementationInBaseClass.dll"
 				},
 				new[] {
 					"Called MyMethod",

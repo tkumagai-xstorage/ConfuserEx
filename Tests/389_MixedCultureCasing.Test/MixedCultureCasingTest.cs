@@ -18,7 +18,7 @@ namespace MixedCultureCasing.Test
 		public async Task MixedCultureCasing() =>
 			await Run(
 				new [] {
-					"389_MixedCultureCasing.exe",
+					"389_MixedCultureCasing.dll",
 					@"de-DE\389_MixedCultureCasing.resources.dll"
 				},
 				new [] {

@@ -20,7 +20,7 @@ namespace _123_InheritCustomAttr.Test {
 		[Trait("Issue", "https://github.com/mkaring/ConfuserEx/issues/161")]
 		public async Task InheritCustomAttribute(string renameMode, bool flatten) =>
 			await Run(
-				"123_InheritCustomAttr.exe",
+				"123_InheritCustomAttr.dll",
 				new[] {"Monday", "43", "1"},
 				new SettingItem<Protection>("rename") {{"mode", renameMode}, {"flatten", flatten ? "True" : "False"}},
 				$"_{renameMode}_{flatten}",

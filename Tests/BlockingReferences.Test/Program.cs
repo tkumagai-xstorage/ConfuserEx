@@ -14,14 +14,14 @@ namespace BlockingReferences.Test {
 		[Trait("Protection", "rename")]
 		[Trait("Issue", "https://github.com/mkaring/ConfuserEx/issues/379")]
 		public async Task BlockingReferences() =>
-			await BlockingReferencesInternal("BlockingReferences.exe", "BlockingReferencesHelper.dll");
+			await BlockingReferencesInternal("BlockingReferences.dll", "BlockingReferencesHelper.dll");
 
 		[Fact]
 		[Trait("Category", "Protection")]
 		[Trait("Protection", "rename")]
 		[Trait("Issue", "https://github.com/mkaring/ConfuserEx/issues/379")]
 		public async Task BlockingReferencesReverse() =>
-			await BlockingReferencesInternal("BlockingReferencesHelper.dll", "BlockingReferences.exe");
+			await BlockingReferencesInternal("BlockingReferencesHelper.dll", "BlockingReferences.dll");
 
 		private async Task BlockingReferencesInternal(params string[] files) =>
 			await Run(

@@ -15,7 +15,7 @@ namespace SignatureMismatch2.Test {
 		[Trait("Issue", "https://github.com/mkaring/ConfuserEx/issues/187")]
 		public async Task SignatureMismatch2() =>
 			await Run(
-				new [] { "SignatureMismatch2.exe", "SignatureMismatch2Helper.dll" },
+				new [] { "SignatureMismatch2.dll", "SignatureMismatch2Helper.dll" },
 				new [] { "External", "External" },
 				new SettingItem<Protection>("rename") { ["renPublic"] = "true" }
 			);

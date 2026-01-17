@@ -45,8 +45,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TypeScrambler", "Tests\Type
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TypeScrambler.Test", "Tests\TypeScrambler.Test\TypeScrambler.Test.csproj", "{DEED6795-9EC9-4B2C-95E0-9E465DA61755}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Confuser.MSBuild.Tasks", "Confuser.MSBuild.Tasks\Confuser.MSBuild.Tasks.csproj", "{91B12706-DC6A-45DE-97F1-FAF0901FF6AF}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfRenaming", "Tests\WpfRenaming\WpfRenaming.csproj", "{BA9D2748-1342-41A3-87F2-343E82D99813}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfRenaming.Test", "Tests\WpfRenaming.Test\WpfRenaming.Test.csproj", "{30B8883F-A0A2-4256-ADCF-A790525D3696}"
@@ -329,18 +327,6 @@ Global
 		{DEED6795-9EC9-4B2C-95E0-9E465DA61755}.Release|x64.Build.0 = Release|Any CPU
 		{DEED6795-9EC9-4B2C-95E0-9E465DA61755}.Release|x86.ActiveCfg = Release|Any CPU
 		{DEED6795-9EC9-4B2C-95E0-9E465DA61755}.Release|x86.Build.0 = Release|Any CPU
-		{91B12706-DC6A-45DE-97F1-FAF0901FF6AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{91B12706-DC6A-45DE-97F1-FAF0901FF6AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{91B12706-DC6A-45DE-97F1-FAF0901FF6AF}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{91B12706-DC6A-45DE-97F1-FAF0901FF6AF}.Debug|x64.Build.0 = Debug|Any CPU
-		{91B12706-DC6A-45DE-97F1-FAF0901FF6AF}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{91B12706-DC6A-45DE-97F1-FAF0901FF6AF}.Debug|x86.Build.0 = Debug|Any CPU
-		{91B12706-DC6A-45DE-97F1-FAF0901FF6AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{91B12706-DC6A-45DE-97F1-FAF0901FF6AF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{91B12706-DC6A-45DE-97F1-FAF0901FF6AF}.Release|x64.ActiveCfg = Release|Any CPU
-		{91B12706-DC6A-45DE-97F1-FAF0901FF6AF}.Release|x64.Build.0 = Release|Any CPU
-		{91B12706-DC6A-45DE-97F1-FAF0901FF6AF}.Release|x86.ActiveCfg = Release|Any CPU
-		{91B12706-DC6A-45DE-97F1-FAF0901FF6AF}.Release|x86.Build.0 = Release|Any CPU
 		{BA9D2748-1342-41A3-87F2-343E82D99813}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BA9D2748-1342-41A3-87F2-343E82D99813}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA9D2748-1342-41A3-87F2-343E82D99813}.Debug|x64.ActiveCfg = Debug|Any CPU

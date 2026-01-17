@@ -19,7 +19,7 @@ namespace ComplexInterfaceRenaming.Test {
 		[Trait("Issue", "https://github.com/mkaring/ConfuserEx/issues/252")]
 		public async Task RenameComplexInterfaces(string renameMode, bool flatten) =>
 			await Run(
-				"252_ComplexInterfaceRenaming.exe",
+				"252_ComplexInterfaceRenaming.dll",
 				new[] {
 					"Operator: I'm a operator.",
 					"Operator(IOperator): I'm a operator.",

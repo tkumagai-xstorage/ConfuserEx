@@ -19,7 +19,7 @@ namespace MethodOverloading.Test {
 		[Trait("Issue", "https://github.com/mkaring/ConfuserEx/issues/230")]
 		public async Task MethodOverloading(bool shortNames, bool preserveGenericParams) =>
 			await Run(
-				"MethodOverloading.exe",
+				"MethodOverloading.dll",
 				new [] {
 					"1",
 					"Hello world",

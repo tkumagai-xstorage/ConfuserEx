@@ -16,7 +16,7 @@ namespace EnumArrayConstantProtection.Test {
 		[Trait("Issue", "https://github.com/mkaring/ConfuserEx/issues/270")]
 		public async Task ConstantsProtection() =>
 			await Run(
-				"270_EnumArrayConstantProtection.exe",
+				"270_EnumArrayConstantProtection.dll",
 				new[] {
 					"Enum Array OK",
 					"String Array OK"

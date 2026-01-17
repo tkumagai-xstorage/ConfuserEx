@@ -27,7 +27,7 @@ namespace MessageDeobfuscation.Test {
 		[Trait("Protection", "rename")]
 		public async Task MessageDeobfuscationWithSymbolsMap(string renameMode, string[] expectedObfuscatedOutput) =>
 			await Run(
-				"MessageDeobfuscation.exe",
+				"MessageDeobfuscation.dll",
 				expectedObfuscatedOutput,
 				new SettingItem<Protection>("rename") { ["mode"] = renameMode },
 				$"SymbolsMap_{renameMode}",

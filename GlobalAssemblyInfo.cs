@@ -1,8 +1,8 @@
 using System.Reflection;
 
 [assembly: AssemblyProduct("ConfuserEx")]
-[assembly: AssemblyCompany("Ki")]
-[assembly: AssemblyCopyright("Copyright (C) Ki 2014")]
+[assembly: AssemblyCompany("Xstorage KK.")]
+[assembly: AssemblyCopyright("Copyright (C) Xstorage KK.")]
 
 #if DEBUG
 

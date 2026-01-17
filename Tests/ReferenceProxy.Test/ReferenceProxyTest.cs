@@ -18,7 +18,7 @@ namespace ReferenceProxy.Test {
 		[Trait("Issue", "https://github.com/mkaring/ConfuserEx/issues/229")]
 		public async Task ReferenceProxy(string mode, string encoding, bool internalRefs, bool typeErasure) =>
 			await Run(
-				"ReferenceProxy.exe",
+				"ReferenceProxy.dll",
 				Array.Empty<string>(),
 				new SettingItem<Protection>("ref proxy") {
 					["mode"] = mode,

@@ -18,7 +18,7 @@ namespace AntiTamper.Test {
 		public Task ProtectAntiTamperAndExecute(string antiTamperMode) {
 			if (antiTamperMode == "jit") return Task.CompletedTask;
 
-			return Run("AntiTamper.exe",
+			return Run("AntiTamper.dll",
 				new[] { "This is a test." },
 				new SettingItem<Protection>("anti tamper") { { "mode", antiTamperMode } },
 				"_" + antiTamperMode);

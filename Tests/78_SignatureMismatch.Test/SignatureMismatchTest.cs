@@ -15,7 +15,7 @@ namespace SignatureMismatch.Test {
 		[Trait("Issue", "https://github.com/mkaring/ConfuserEx/issues/78")]
 		public async Task SignatureMismatch() =>
 			await Run(
-				"78_SignatureMismatch.exe",
+				"78_SignatureMismatch.dll",
 				new [] {
 					"Dictionary created",
 					"Dictionary count: 1",

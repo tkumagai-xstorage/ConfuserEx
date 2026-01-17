@@ -16,7 +16,7 @@ namespace SignatureMismatch.Test {
 		[Trait("Issue", "https://github.com/mkaring/ConfuserEx/issues/349")]
 		public async Task RenameDynamicParameter() =>
 			await Run(
-				"345_RenameDynamicParameter.exe",
+				"345_RenameDynamicParameter.dll",
 				new[] {
 					"static message",
 					"dynamic message",

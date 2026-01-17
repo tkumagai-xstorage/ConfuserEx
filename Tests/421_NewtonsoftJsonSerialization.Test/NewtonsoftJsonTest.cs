@@ -16,7 +16,7 @@ namespace NewtonsoftJsonSerialization.Test {
 		public async Task SignatureMismatch() =>
 			await Run(
 				new[] {
-					"421_NewtonsoftJsonSerialization.exe",
+					"421_NewtonsoftJsonSerialization.dll",
 					"external:Newtonsoft.Json.dll"
 				},
 				new [] {
